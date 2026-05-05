@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jittrawat.K — Full-Stack Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="bg-canvas"></div>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Portfolio</div>
+    <div class="nav-right">
+      <div class="menu" id="menu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button id="theme-toggle" aria-label="Toggle theme"></button>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="about-img fade-up">
+      <img src="profile.jfif" alt="Jittrawat">
+    </div>
+    <div class="about-content">
+      <span class="badge-top fade-up">Full-Stack Developer</span>
+      <h1 class="fade-up">Hi, I'm <span class="gradient">Jittrawat</span></h1>
+      <p class="fade-up">
+        A final-year Computer Science student with a strong passion for building
+        high-quality, maintainable web systems.
+      </p>
+      <div class="edu-card fade-up">
+        <p><strong>Kasetsart University</strong></p>
+        <p>Chalermphrakiat Sakon Nakhon Campus</p>
+        <small>B.S. Computer Science · Graduating Mar 2026</small>
+      </div>
+      <div class="about-btns">
+        <button class="btn light">Get in touch</button>
+        <button class="btn dark">GitHub</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <div class="section-header fade-up">
+      <h2>Technical Skills</h2>
+      <p>Technologies and tools I work with to bring ideas to life.</p>
+    </div>
+    <div class="skills-container">
+      <div class="card">
+        <h3>Languages & Core</h3>
+        <div class="tags">
+          <span>PHP</span><span>Java</span><span>JavaScript</span>
+          <span>TypeScript</span><span>SQL</span><span>Python</span>
+          <span>HTML5</span><span>CSS3</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Frameworks & Libs</h3>
+        <div class="tags">
+          <span>Node.js</span><span>React</span><span>Angular</span>
+          <span>Laravel</span><span>Prisma</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Tools & Ecosystem</h3>
+        <div class="tags">
+          <span>Git</span><span>Docker</span><span>Postman</span>
+          <span>XAMPP</span><span>Supabase</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Problem Solving</li>
+          <li>Critical Thinking</li>
+          <li>Teamwork</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="experience" id="experience">
+    <div class="section-header fade-up">
+      <h2>Experience</h2>
+      <p>Professional internship and work history.</p>
+    </div>
+    <div class="exp-card">
+      <div class="exp-item">
+        <div class="exp-left">
+          <h3>Software Dev Intern</h3>
+          <span class="company">BANGKOK SOLUTION CO., LTD.</span>
+          <h4>JNJService</h4>
+          <p class="tech">Pure PHP · JavaScript · PHP GD · mPDF</p>
+          <ul>
+            <li>Built a surgery tracking module with real-time price calculation.</li>
+            <li>Developed a web-based camera system with watermarking.</li>
+          </ul>
+        </div>
+        <div class="exp-right">
+          <span class="badge">Full-stack Developer</span>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-left">
+          <h3>Software Dev Intern</h3>
+          <span class="company">BANGKOK SOLUTION CO., LTD.</span>
+          <h4>JNJService</h4>
+          <p class="tech">Pure PHP · JavaScript · PHP GD · mPDF</p>
+          <ul>
+            <li>Built a surgery tracking module with real-time price calculation.</li>
+            <li>Developed a web-based camera system with watermarking.</li>
+          </ul>
+        </div>
+        <div class="exp-right">
+          <span class="badge">Full-stack Developer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <div class="section-header fade-up">
+      <h2>Projects</h2>
+      <p>Academic, freelance, and personal work I've shipped.</p>
+    </div>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card fade-up">
+        <div class="project-img">
+          <div class="browser-bar">
+            <div class="browser-dot dot-r"></div>
+            <div class="browser-dot dot-y"></div>
+            <div class="browser-dot dot-g"></div>
+            <div class="browser-url"></div>
+          </div>
+          <div class="content-lines">
+            <div class="content-line accent"></div>
+            <div class="content-line full"></div>
+            <div class="content-line medium"></div>
+            <div class="content-line full"></div>
+            <div class="content-line short"></div>
+            <div class="content-line full"></div>
+            <div class="content-line medium"></div>
+          </div>
+          <div class="project-label">Thesis</div>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="project-type">Undergraduate Thesis</span>
+            <span class="project-sep">·</span>
+            <span class="project-role">Full-stack Developer</span>
+          </div>
+          <h3>Mobile Phone Info Platform</h3>
+          <p>A mobile info website with search, filtering (specs, year, price), and a back-office system for content and user management. Deployed on the university server for evaluation.</p>
+          <div class="project-tags">
+            <span>Laravel</span><span>MySQL</span><span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card fade-up">
+        <div class="project-img">
+          <div class="browser-bar">
+            <div class="browser-dot dot-r"></div>
+            <div class="browser-dot dot-y"></div>
+            <div class="browser-dot dot-g"></div>
+            <div class="browser-url"></div>
+          </div>
+          <div class="content-lines">
+            <div class="content-line accent" style="width:55%"></div>
+            <div class="content-line full"></div>
+            <div class="content-line short"></div>
+            <div class="content-line full"></div>
+            <div class="content-line medium"></div>
+            <div class="content-line full"></div>
+            <div class="content-line short"></div>
+          </div>
+          <div class="project-label">Freelance</div>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="project-type">Freelance</span>
+            <span class="project-sep">·</span>
+            <span class="project-role">Web Developer</span>
+          </div>
+          <h3>Rhinish Travel</h3>
+          <p>Maintained and updated a legacy web platform using Pure PHP, developing new database functions and resolving technical bugs while collaborating with senior developers.</p>
+          <div class="project-tags">
+            <span>Pure PHP</span><span>MySQL</span><span>JavaScript</span><span>HTML/CSS</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="contact-card fade-up">
+      <h1>Let's work <em>together</em></h1>
+      <p>
+        Available for full-time roles starting mid-March 2026. If you have an exciting
+        opportunity or just want to connect, my inbox is always open!
+      </p>
+      <div class="contact-btns">
+        <button class="btn green">Jittrawat.k@gmail.com</button>
+        <button class="btn dark">065-297-3530</button>
+      </div>
+    </div>
+  </section>
+
+  <button id="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></button>
+
+  <footer>
+    <p>© 2026 Jittrawat Kulpetjittra</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
