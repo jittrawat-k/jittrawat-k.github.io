@@ -46,7 +46,9 @@
       </div>
       <div class="about-btns">
         <button class="btn light">Get in touch</button>
-        <button class="btn dark">GitHub</button>
+        <a href="https://github.com/jittrawat-k" target="_blank" rel="noopener noreferrer">
+          <button class="btn dark">GitHub</button>
+        </a>
       </div>
     </div>
   </section>
@@ -91,41 +93,84 @@
     </div>
   </section>
 
-  <!-- Experience -->
+  <!-- Experience & Projects (combined) -->
   <section class="experience" id="experience">
     <div class="section-header fade-up">
-      <h2>Experience</h2>
-      <p>Professional internship and work history.</p>
+      <h2>Experience &amp; Projects</h2>
+      <p>Professional work and highlighted academic/freelance projects.</p>
     </div>
-    <div class="exp-card">
+
+    <!-- Internship block -->
+    <div class="exp-card fade-up">
+      <div class="exp-employer">
+        <div class="exp-employer-left">
+          <h3>IT Engineer Intern</h3>
+          <span class="company">NMB-Minebea Thai Ltd.</span>
+        </div>
+        <div class="exp-employer-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48" opacity="0.18"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        </div>
+      </div>
+
+      <!-- Sub-project 1 -->
       <div class="exp-item">
         <div class="exp-left">
-          <h3>Software Dev Intern</h3>
-          <span class="company">BANGKOK SOLUTION CO., LTD.</span>
-          <h4>JNJService</h4>
-          <p class="tech">Pure PHP · JavaScript · PHP GD · mPDF</p>
+          <h4 class="proj-title">Quality Data Dashboard</h4>
+          <p class="tech">Metabase &middot; PostgreSQL &middot; SQL </p>
           <ul>
-            <li>Built a surgery tracking module with real-time price calculation.</li>
-            <li>Developed a web-based camera system with watermarking.</li>
+            <li>Wrote SQL filters to extract NG Code and Process data for the QC department.</li>
+            <li>Enabled QC team to build daily/monthly Pivot charts via Metabase for decision-making.</li>
+          </ul>
+        </div>
+        <div class="exp-right">
+          <span class="badge">Data / BI</span>
+        </div>
+      </div>
+
+      <!-- Sub-project 2 -->
+      <div class="exp-item">
+        <div class="exp-left">
+          <h4 class="proj-title">Spare Parts Management System</h4>
+          <p class="tech">React &middot; Node.js &middot; PostgreSQL</p>
+          <ul>
+            <li>Built UI for spare parts issuing and returning with separate tabs.</li>
+            <li>Integrated real-time API calls to the company's AS400 system on every save action.</li>
           </ul>
         </div>
         <div class="exp-right">
           <span class="badge">Full-stack Developer</span>
         </div>
       </div>
+
+      <!-- Sub-project 3 -->
       <div class="exp-item">
         <div class="exp-left">
-          <h3>Software Dev Intern</h3>
-          <span class="company">BANGKOK SOLUTION CO., LTD.</span>
-          <h4>JNJService</h4>
-          <p class="tech">Pure PHP · JavaScript · PHP GD · mPDF</p>
+          <h4 class="proj-title">Data Ingestion Pipeline</h4>
+          <p class="tech">Python &middot; SQL &middot; PostgreSQL </p>
           <ul>
-            <li>Built a surgery tracking module with real-time price calculation.</li>
-            <li>Developed a web-based camera system with watermarking.</li>
+            <li>Wrote Python scripts to data from a central API (AS400).</li>
+          </ul>
+          <ul>
+            <li>Validated and auto-stored ingested data into PostgreSQL for Maintenance tracking.</li>
           </ul>
         </div>
         <div class="exp-right">
-          <span class="badge">Full-stack Developer</span>
+          <span class="badge">Backend / Data Engineer</span>
+        </div>
+      </div>
+
+      <!-- Sub-project 4 -->
+      <div class="exp-item">
+        <div class="exp-left">
+          <h4 class="proj-title">NG Scan System</h4>
+          <p class="tech">HTML &middot; JavaScript &middot; CSS &middot; PostgreSQL</p>
+          <ul>
+            <li>Developed an NG part scanning system for Base HDD components with PostgreSQL logging.</li>
+          </ul>
+        </div>
+        <div class="exp-right">
+          <span class="badge">Full-stack Developer
+</span>
         </div>
       </div>
     </div>

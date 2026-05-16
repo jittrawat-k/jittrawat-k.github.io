@@ -307,6 +307,25 @@ section { min-height: auto; padding-bottom: 20px; }
 /* ─── Experience ─── */
 .experience { padding: 70px 10%; border-top: 1px solid var(--border); }
 
+/* Employer header row inside the card */
+.exp-employer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem 2rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-2);
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.exp-employer-left h3 {
+  font-size: 1.1rem; font-weight: 600;
+  color: var(--text); margin-bottom: 4px;
+}
+.exp-employer-icon {
+  color: var(--text-2);
+  flex-shrink: 0;
+}
+
 .exp-card {
   border: 1px solid var(--border);
   border-radius: var(--radius); overflow: hidden;
@@ -314,15 +333,20 @@ section { min-height: auto; padding-bottom: 20px; }
 }
 .exp-item {
   display: flex; justify-content: space-between; align-items: flex-start;
-  gap: 24px; padding: 2rem;
+  gap: 24px; padding: 1.5rem 2rem;
   transition: background 0.3s var(--ease);
 }
 .exp-item:not(:last-child) { border-bottom: 1px solid var(--border); }
 .exp-item:hover { background: var(--surface-2); }
-.exp-item::before { display: none; }
+
+/* Sub-project title */
+.proj-title {
+  font-size: 0.975rem; font-weight: 600;
+  color: var(--text); margin-bottom: 4px;
+}
 
 .exp-left h3 { font-size: 1.05rem; font-weight: 500; margin-bottom: 4px; color: var(--text); }
-.company { color: var(--accent); font-size: 0.85rem; display: block; margin-bottom: 0.5rem; }
+.company { color: var(--accent); font-size: 0.85rem; display: block; margin-bottom: 0; }
 .exp-left h4 { font-size: 0.85rem; font-weight: 400; color: var(--text-2); margin-bottom: 6px; }
 .tech { color: var(--text-2); font-size: 0.78rem; margin-bottom: 0.75rem; letter-spacing: 0.02em; }
 .exp-left ul { padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
@@ -374,11 +398,6 @@ section { min-height: auto; padding-bottom: 20px; }
   overflow: hidden;
   border-bottom: 1px solid var(--border);
 }
-.project-img .screen-mock {
-  position: absolute; inset: 0;
-  display: flex; align-items: center; justify-content: center;
-  flex-direction: column; gap: 12px;
-}
 .project-img .browser-bar {
   position: absolute; top: 0; left: 0; right: 0;
   height: 32px;
@@ -401,6 +420,7 @@ section { min-height: auto; padding-bottom: 20px; }
   padding-top: 40px;
   display: flex; flex-direction: column; gap: 8px;
   width: 80%;
+  margin: 0 auto;
 }
 .content-line {
   height: 8px; border-radius: 4px;
@@ -498,17 +518,9 @@ footer p { color: var(--muted); font-size: 0.8rem; }
   .about-content > p { margin: 0 auto 2rem; }
   .about-btns { justify-content: center; }
   .about-img img { width: 200px; height: 240px; }
+  .exp-item { flex-direction: column; gap: 12px; }
+  .exp-employer { padding: 1.25rem 1.5rem; }
 }
-
-/* ─── Background canvas (subtle) ─── */
-[data-theme="light"] [data-theme="light"] /* tighten card gaps */
-.skills-container { gap: 12px; }
-.projects-grid { gap: 16px; }
-.exp-item { padding: 1.5rem; }
-.section-header { margin-bottom: 2rem; }
-.about-content > p { margin-bottom: 1.25rem; }
-.edu-card { margin-bottom: 1.5rem; }
-.contact-card { padding: 2.5rem; }
 
 /* ─── Background canvas ─── */
 #bg-canvas {
