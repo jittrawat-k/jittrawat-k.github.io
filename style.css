@@ -7,7 +7,9 @@
   --radius-sm: 8px;
   --ease: cubic-bezier(0.4,0,0.2,1);
 }
-
+a {
+  text-decoration: none;
+}
 /* Dark theme (default) */
 [data-theme="dark"] {
   --bg: #0c0c0e;
@@ -522,6 +524,27 @@ footer p { color: var(--muted); font-size: 0.8rem; }
   .exp-employer { padding: 1.25rem 1.5rem; }
 }
 
+/* Screenshot area */
+.project-img {
+  width: 100%;
+  background: var(--card-img-bg);
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.project-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  padding-top: 32px; /* เผื่อ browser-bar สูง 32px */
+}
+
 /* ─── Background canvas ─── */
 #bg-canvas {
   position: fixed;
@@ -554,6 +577,9 @@ footer p { color: var(--muted); font-size: 0.8rem; }
   --glow-1: rgba(79,82,216,0.06);
   --glow-2: rgba(79,82,216,0.03);
 }
+
+
+
 
 /* ─── Scroll to top ─── */
 #back-to-top {

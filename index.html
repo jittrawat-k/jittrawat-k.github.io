@@ -30,7 +30,7 @@
   <!-- About -->
   <section id="about" class="about">
     <div class="about-img fade-up">
-      <img src="profile.jfif" alt="Jittrawat">
+      <img src="/public/profile.jfif" alt="Jittrawat">
     </div>
     <div class="about-content">
       <span class="badge-top fade-up">Full-Stack Developer</span>
@@ -44,8 +44,9 @@
         <p>Chalermphrakiat Sakon Nakhon Campus</p>
         <small>B.S. Computer Science · Graduating Mar 2026</small>
       </div>
-      <div class="about-btns">
-        <button class="btn light">Get in touch</button>
+        <a href="#contact" rel="noopener noreferrer">
+          <button class="btn light">Get in touch</button>
+        </a>
         <a href="https://github.com/jittrawat-k" target="_blank" rel="noopener noreferrer">
           <button class="btn dark">GitHub</button>
         </a>
@@ -78,7 +79,7 @@
       <div class="card">
         <h3>Tools & Ecosystem</h3>
         <div class="tags">
-          <span>Git</span><span>Docker</span><span>Postman</span>
+          <span>Git</span><span>Postman</span>
           <span>XAMPP</span><span>Supabase</span>
         </div>
       </div>
@@ -97,7 +98,7 @@
   <section class="experience" id="experience">
     <div class="section-header fade-up">
       <h2>Experience &amp; Projects</h2>
-      <p>Professional work and highlighted academic/freelance projects.</p>
+      <p>Professional work and highlighted academic projects.</p>
     </div>
 
     <!-- Internship block -->
@@ -134,7 +135,7 @@
           <p class="tech">React &middot; Node.js &middot; PostgreSQL</p>
           <ul>
             <li>Built UI for spare parts issuing and returning with separate tabs.</li>
-            <li>Integrated real-time API calls to the company's AS400 system on every save action.</li>
+            <li>Integrated real-time API calls to the company's AS/400 system on every save action.</li>
           </ul>
         </div>
         <div class="exp-right">
@@ -148,7 +149,7 @@
           <h4 class="proj-title">Data Ingestion Pipeline</h4>
           <p class="tech">Python &middot; SQL &middot; PostgreSQL </p>
           <ul>
-            <li>Wrote Python scripts to data from a central API (AS400).</li>
+            <li>Wrote Python scripts to data from a central API (AS/400).</li>
           </ul>
           <ul>
             <li>Validated and auto-stored ingested data into PostgreSQL for Maintenance tracking.</li>
@@ -180,46 +181,42 @@
   <section class="projects" id="projects">
     <div class="section-header fade-up">
       <h2>Projects</h2>
-      <p>Academic, freelance, and personal work I've shipped.</p>
+      <p>Academic , and personal work I've shipped.</p>
     </div>
     <div class="projects-grid">
 
       <!-- Project 1 -->
       <div class="project-card fade-up">
         <div class="project-img">
-          <div class="browser-bar">
-            <div class="browser-dot dot-r"></div>
-            <div class="browser-dot dot-y"></div>
-            <div class="browser-dot dot-g"></div>
-            <div class="browser-url"></div>
-          </div>
-          <div class="content-lines">
-            <div class="content-line accent"></div>
-            <div class="content-line full"></div>
-            <div class="content-line medium"></div>
-            <div class="content-line full"></div>
-            <div class="content-line short"></div>
-            <div class="content-line full"></div>
-            <div class="content-line medium"></div>
-          </div>
-          <div class="project-label">Thesis</div>
-        </div>
+  <div class="browser-bar">
+    <div class="browser-dot dot-r"></div>
+    <div class="browser-dot dot-y"></div>
+    <div class="browser-dot dot-g"></div>
+    <div class="browser-url"></div>
+  </div>
+
+  <img src="public/pc.png" alt="Computer Assembly System" style="width:100%; display:block;">
+
+  
+</div>
         <div class="project-body">
           <div class="project-meta">
             <span class="project-type">Undergraduate Thesis</span>
             <span class="project-sep">·</span>
             <span class="project-role">Full-stack Developer</span>
           </div>
-          <h3>Mobile Phone Info Platform</h3>
-          <p>A mobile info website with search, filtering (specs, year, price), and a back-office system for content and user management. Deployed on the university server for evaluation.</p>
+          <h3>Computer Assembly System
+</h3>
+          <p>A full-stack web application for building and configuring custom PC setups. Features hardware compatibility validation, component search, and a guided part selection workflow. Stack: React.js, Node.js, MySQL.</p>
           <div class="project-tags">
-            <span>Laravel</span><span>MySQL</span><span>JavaScript</span>
+            <span>React</span><span>Node.js
+</span><span>MySQL</span>
           </div>
         </div>
       </div>
 
       <!-- Project 2 -->
-      <div class="project-card fade-up">
+      <!-- <div class="project-card fade-up">
         <div class="project-img">
           <div class="browser-bar">
             <div class="browser-dot dot-r"></div>
@@ -236,21 +233,9 @@
             <div class="content-line full"></div>
             <div class="content-line short"></div>
           </div>
-          <div class="project-label">Freelance</div>
         </div>
-        <div class="project-body">
-          <div class="project-meta">
-            <span class="project-type">Freelance</span>
-            <span class="project-sep">·</span>
-            <span class="project-role">Web Developer</span>
-          </div>
-          <h3>Rhinish Travel</h3>
-          <p>Maintained and updated a legacy web platform using Pure PHP, developing new database functions and resolving technical bugs while collaborating with senior developers.</p>
-          <div class="project-tags">
-            <span>Pure PHP</span><span>MySQL</span><span>JavaScript</span><span>HTML/CSS</span>
-          </div>
-        </div>
-      </div>
+    
+      </div> -->
 
     </div>
   </section>
@@ -264,9 +249,9 @@
         opportunity or just want to connect, my inbox is always open!
       </p>
       <div class="contact-btns">
-        <button class="btn green">Jittrawat.k@gmail.com</button>
-        <button class="btn dark">065-297-3530</button>
-      </div>
+  <a href="mailto:Jittrawat.k@gmail.com" class="btn green">Jittrawat.k@gmail.com</a>
+  <a href="tel:+66652973530" class="btn dark">065-297-3530</a>
+</div>
     </div>
   </section>
 
